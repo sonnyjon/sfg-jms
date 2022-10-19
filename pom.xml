@@ -22,11 +22,11 @@
     </properties>
 
     <dependencies>
+        <!-- Needed for embedded server -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-artemis</artifactId>
         </dependency>
-        <!-- Needed for embedded server -->
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>artemis-server</artifactId>
