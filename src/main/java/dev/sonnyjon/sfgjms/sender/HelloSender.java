@@ -43,7 +43,7 @@ public class HelloSender
                 .message("Hello")
                 .build();
 
-        Message receviedMsg = jmsTemplate.sendAndReceive(JmsConfig.MY_SEND_RCV_QUEUE, session -> {
+        Message receivedMsg = jmsTemplate.sendAndReceive(JmsConfig.MY_SEND_RCV_QUEUE, session -> {
 
             Message helloMessage;
 
@@ -59,6 +59,6 @@ public class HelloSender
             }
         });
 
-        if (receviedMsg != null) System.out.println(receviedMsg.getBody(String.class));
+        if (receivedMsg != null) System.out.println(receivedMsg.getBody(String.class));
     }
 }
